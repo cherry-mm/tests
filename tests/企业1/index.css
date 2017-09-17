@@ -1,0 +1,38 @@
+*{
+	margin: 0;padding: 0;
+}
+a{text-decoration: none;color: #fff;}
+ul li{list-style: none;}
+/*导航部分*/
+#top{width: 900px;height: 430px;margin: 0 auto;font-size: 16px;font-weight: bold;}
+#top #up{width: 900px;height: 166px;background: url(images/top5.jpg);background-size: 900px 166px;position: relative;}
+#top #up #nav{width: 617px;height: 45px;position: absolute;left: 370px;top:100px;}
+#top #up #nav li{float: left;list-style: none;color: #fff;}
+#top #up #nav li a:hover{color: #f60;}
+#top #down img{float: left;margin-right: 0;margin-left: 0;}
+
+/*内容 左边*/
+#content{width: 950px;height: 500px;margin-bottom: 40px;border-bottom: 2px solid #ccc;}
+#content #left{margin-top: 10px;margin-left: 10px; width: 250px;height: 438px;overflow: hidden;float: left;}
+#content #left #left_top{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;height: 75px;}
+#content #left #tab{float: left; font-size: 12px;margin-left: 10px;}
+#content #left #tab input{width: 120px;}
+#content #left img{float: left;}
+#content #left #left_con{position: relative;width: 200px; height:280px;margin:0 auto;}
+#content #left #left_con #_img{z-index: 9; }
+#content #left #left_con #cover_text{z-index: 10;position: absolute;width: 180px;height: 200px;margin-top: 50px;margin-left: 10px;}
+#content #left #left_con #_text{font-size: 12px;}
+#content #left #left_bot{width: 200px;height: 80px;margin-left: 26px;}
+#content #left #left_bot img{margin: 10px auto; width:190px; height:55px;}
+
+/*内容 右边*/
+#content #right{float: left;width: 650px;height: 420px;margin-left: 30px;}
+#content #right #right_top{width: 650px;height: 64px;border-bottom: 1px groove #ccc;margin-top: 20px;margin-bottom: 20px;}
+#content #right #right_top img,h3{float: left;}
+#content #right #right_top h3{margin-top: 10px;margin-left: 10px;}
+#content #right #right_con p{text-indent: 2em;font-size: 12px;line-height: 25px;}
+
+/*底部*/
+#bottom{clear: both;width: 950px;height: 120px; margin: 0 auto;}
+#bottom #backimg{background: url(images/di1.jpg);width: 854px;height: 119px;background-repeat: none;position: relative;}
+#bottom #backimg ul{position: absolute; width: 830px;height: 100px;margin-left: 20px;margin-top: 20px;}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>单页制作</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		body{background: url("img/bg.jpg");}
+		.content{width: 980px;height:0px; background: url("img/ico1.png") no-repeat center -20px; transition: all 1s;cursor: pointer;position: relative;margin: 0 auto;}
+		.heig{height: 320px;}
+		.con{padding-left: 80px;padding-top: 20px; position: absolute; height: 320px padding: 40px;font-size: 16px;color: #fff;line-height: 55px; margin: 0 auto;display: none;}
+		.close{position: absolute; z-index: 20;right: 200px;cursor: pointer;display: none;}
+		/*.content:hover {height: 320px;}*/
+		.icon{height:320px; width:100%; position: absolute;bottom: 0;margin: 0 auto;}
+		.icon ul{width: 980px;position: relative;margin: 0 auto;}
+		.icon ul li{position: absolute; width: 150px;height: 150px;list-style: none;opacity: 0.7;cursor: pointer;z-index: 10;transition: all 1s;overflow: hidden;}
+		.icon ul li .rorate{position: absolute; width: 150px;height: 150px;background: url(img/bg2.png);background-size: 150px 150px;z-index: 10; -webkit-animation: play 3s linear infinite;}
+		.icon ul li img{position: absolute; top: 0;bottom: 0; left: 0; right: 0;margin: auto;transform:scale(0.8);}
+		.icon ul li:nth-child(1){right: 900px;}
+		.icon ul li:nth-child(2){right: 60px;top: 100px;}
+		.icon ul li:nth-child(3){right: 160px;top: -240px;}
+		.icon ul li:hover div{background: url(img/bg12.png); background-size: 150px 150px;}
+		.mo{opacity: 1 !important;top: 0 !important;right: 45% !important;}
+		@keyframes play{
+				from{-webkit-transform:rotate(0deg); }
+				to{-webkit-transform:rotate(360deg);}
+		}
+	</style>
+</head>
+<body>
+	<span class="close"><img src="img/gb.png"></span>
+	<div class="content">
+		<div class="con">
+			<p>目标: 使用最新技术完成ｐｃ和移动网页开发</p>
+		</div>
+		<div class="con">
+			<p>目标: 使用最新技术完成ｐｃ和移动网页开发</p>
+		</div>
+		<div class="con">
+			<p>目标: 使用最新技术完成ｐｃ和移动网页开发</p>
+		</div>
+	</div>
+	<div class="icon">
+		<ul class="list">
+			<li>
+				<div class="rorate"></div>
+				<img class="icon_pic" src="img/ico4.png">
+			</li>
+			<li>
+				<div class="rorate"></div>
+				<img class="icon_pic" src="img/ico5.png">
+			</li>
+			<li>
+				<div class="rorate"></div>
+				<img class="icon_pic" src="img/ico7.png">
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../jquery-1.11.1.js"></script>
+	<script>
+		$(".close").click(function(){
+			$(".content").removeClass("heig");
+			$(".content .con").hide();
+			$(this).hide();
+			
+		});
+		$(".list li").click(function(){
+			$(".close").slideDown("slow");
+			$(".content").addClass("heig");//内容背景栏显示
+			$(this).addClass("mo").siblings().removeClass("mo");//添加位移样式
+			var i=$(this).index();
+			$(".content .con").eq(i).slideDown("slow").siblings().hide();//内容切换
+			if(i==0){
+				$(".list li").eq(1).css({"top":"120px","right":"800px"});
+				$(".list li").eq(2).css({"top":"120px","right":"60px"});
+			}else if(i==1){
+				$(".list li").eq(2).css({"top":"120px","right":"800px"});
+				$(".list li").eq(0).css({"top":"120px","right":"60px"});
+			}else if(i==2){
+				$(".list li").eq(0).css({"top":"120px","right":"800px"});
+				$(".list li").eq(1).css({"top":"120px","right":"60px"});
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+*{margin: 0;padding: 0;}
+html{width:100%; height:100%; overflow:hidden;}
+body{background: url("images/bg.jpg");}
+.picList{width: 800px;height: 560px;margin: 30px auto;}
+.picList ul li{list-style: none; float: left;margin: 5px;background: #fff;box-shadow: 0 0 10px #fff;height: 160px;border: 10px groove #fff;cursor:pointer;}
+.picList ul li img{width: 230px;height: 160px;}
+/*遮罩*/
+.pan{position:absolute; top:0px; left:0px;width:100%; height:100%; background:rgba(0,0,0,0.6);display: none;/*鼠标点击相片遮罩才产生否则遮罩隐藏*/}
+/*内容*/
+.content{display: none;}/*鼠标点击相片才显示*/
+
+.content .main .pic_img{ width: 668px;height: 468px;top:0;bottom: 0;left: 0;right: 0; margin: auto;position: absolute;z-index:10; }
+
+.content .main .pic_img span{margin-bottom: 8px;position: absolute;/*将几张图片叠在一起*/}
+.content .main .pic_img img{width: 660px;height: 460px;border: 4px solid #fff;}
+/*按钮*/
+.content a{position: absolute; text-decoration: none;color: #fff;font-size: 30px;z-index: 9;width: 50px;height: 80px;border: 1px solid #fff;box-shadow: 0 0 5px #fff;border-radius: 10px;line-height: 80px;text-align: center;font-weight: bold;cursor: pointer;}
+.content .pre{ left: 100px;top: 35%;}
+.content .next{ right: 100px; top: 35%;}
+a:hover{box-shadow: 0 0 20px #fff;}

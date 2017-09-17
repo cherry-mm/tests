@@ -1,0 +1,70 @@
+/*body*/
+body{background: #EEEEEE;}
+ul,li{list-style: none;float: left;}
+/*header*/
+#header #header_main{width: 1200px;height: 450px;margin: 0 auto;}
+#header #header_main #liner{width: 1200px;height: 3px;
+background-image:  url("../images/tops.gif");background-repeat: repeat-x;}
+#header #header_main #top-left{clear: both;float: left;width: 431px;height: 55px;
+background: url("../images/logo.gif");background-repeat: no-repeat ;
+margin-left:  110px;margin-top: 20px;}
+#header #header_main #top-left a{width:100%; height:100%; display:block; text-indent:-9999px;}
+#header_main #top-right{float: right;width: 306px;height: 70px;
+background:url("../images/sx.gif");background-repeat: no-repeat;}
+
+/*导航部分*/
+#header_main #nav{clear: both;width: 1200px;height: 37px;
+background: url("../images/nav.gif");background-repeat: repeat-x;}
+#header_main #nav ul{margin-left: 150px;}
+#header_main #nav a{text-decoration: none;color: #fff;line-height: 20px;
+	height: 37px;width: 100px;text-align: center;
+display: block;margin: -12px 10px 0 10px;}
+#header_main #nav a:hover{background: url("../images/nvas.gif");
+background-repeat: no-repeat 0 0;height: 30px;}
+
+/*幻灯片部分*/
+#flash-box{ width:980px;  margin:0 auto; overflow:hidden;//内容会被修剪，并且其余内容是不可见的
+ padding-top:10px;}
+ #slideshow{position:relative;height:311px;width:980px; margin:0 auto;}
+ #slideshow div{position:absolute;top:0;left:0;
+ z-index:8;//对于同级元素，position不为static且z-index存在的情况下z-index大的元素会覆盖z-index小的元素，即z-index越大优先级越高。
+opacity:0.0;height:311px;overflow:hidden;background-color:#FFF;}
+#slideshow div.current{z-index:10;}
+#slideshow div.prev{z-index:9;}
+#slideshow div img{display:block;border:0;margin-bottom:10px;}
+
+/*mid*/
+#mid{clear: both;width:960px;margin: 0 auto; overflow:hidden;}
+#mid #mid-top{width: 960px;height: auto;margin: 0 auto;}
+//#mid #mid-top div a{float: left;//
+	//margin:0 auto; 
+	//padding: 0 auto;
+//}
+#m1{ float:left; width:233px; height:285px; padding-right:5px}
+#m2{ float:left; width:232px; height:285px;padding-right:5px}
+#m3{ float:left; width:233px; height:285px;padding-right:5px}
+#m4{ float:left; width:234px; height:285px;}
+//#mid #mid-top #m1{margin-left: 20px;}
+
+#mid-bot{clear: both;width:1130px; margin: 0 auto;}
+#mid-bot #bot1{float: left; //margin-left: 10%;
+	font-size: 12px;}
+#mid-bot #bot1 dd{margin: 2px 0;border-bottom-style: dashed;border-bottom-width: 1px;border-bottom-color: #cccccc;}
+#mid-bot a{text-decoration: none;color: black;line-height:20px;}
+#mid-bot #bot2{float: left;font-size: 12px;margin-left: 90px;}
+#mid-bot #bot2 p{background: url("../images/sp-pic.gif");background-repeat: no-repeat;
+width: 225px;height: 150px;}
+#mid-bot #bot3{float: left;margin-left: 70px;font-size: 12px;}
+#mid-bot #bot3 dd{margin: 2px 0;border-bottom-style: dashed;border-bottom-width: 1px;border-bottom-color: #cccccc;}
+#mid-bot #bot4{float: right;margin-left: 10px;margin-right: 30px;margin-top: -20px;}
+#mid-bot #bot4 #fr1{background: url("../images/zsjm.gif");background-repeat: no-repeat;
+width: 238px;height: 69px}
+#mid-bot #bot4 #fr2{background: url("../images/yxwl.gif");background-repeat: no-repeat;
+width: 238px;height: 69px}
+#mid-bot #bot4 #fr3{background: url("../images/khfw.gif");background-repeat: no-repeat;
+width: 238px;height: 69px}
+#buttom{clear: both;width: 1200px;background-color: #999999;margin: 0 auto;}
+#buttom #left{//float: left;
+ background: url("../images/foot-logo.gif");background-repeat: no-repeat ;
+width: 463px;height: 69px;margin-left: 120px;}
+#buttom #right{float: right;margin-top: -70px;}

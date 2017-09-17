@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+	<title>test</title>
+<style type="text/css">
+	*{ margin:0;padding:0;}
+	body{background: #FFEDB2;}
+	.pic{width: 1060px;margin:10px auto;}
+	.pic_img{width: 240px;height: 400px;float: left;margin: 10px 10px ;position: relative;
+		border: 2px groove #B300ff; box-shadow: 0 0  10px #B300ff;overflow: hidden;}
+	.pic_img p{width: 240px;height: 400px;background: pink;font-size: 50px;color: #B300ff;text-align: center;line-height: 300px;}
+	.pic_img div{position: absolute;left: 0;top: 0;transform-origin: left bottom;
+		transform: rotate(-100deg);transition: transform 1s;}
+	.pic .top_s div  {transform: rotate(0deg);}
+</style>
+
+</head>
+<body>
+	<div class="pic">
+		<div class="pic_img">
+			<p>暖暖1号</p>
+			<div>
+				<img src="imgs/1.jpg" width= "240px"; height= "400px";>
+			</div>
+		</div>
+		<div class="pic_img">
+			<p>暖暖2号</p>
+			<div>
+				<img src="imgs/2.jpg" width= "240px"; height= "400px";>
+			</div>
+		</div>
+		<div class="pic_img">
+			<p>暖暖3号</p>
+			<div>
+				<img src="imgs/3.jpg" width= "240px"; height= "400px";>
+			</div>
+		</div>
+		<div class="pic_img">
+			<p>暖暖4号</p>
+			<div>
+				<img src="imgs/4.jpg" width= "240px"; height= "400px";>
+			</div>
+		</div>
+	</div>
+	<script  src="jquery-1.11.1.js"></script>
+	<script>  
+	$(".pic_img").bind("mouseenter mouseleave",function(e){
+		var $this=$(this);
+		if(e.type == 'mouseenter'){
+			//console.log("bottom");
+			into();
+		}else{
+			out();
+		}
+		function into(){
+			$this.addClass("top_s");
+		}
+		function out(){
+			$this.removeClass("top_s");
+		}
+	});
+</script>
+</body>
+</html>

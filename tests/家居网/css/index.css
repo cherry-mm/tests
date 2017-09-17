@@ -1,0 +1,92 @@
+/*全局样式*/
+*{	margin: 0;padding: 0;}
+ul,li,ol{float: left;list-style: none;}
+a{color: #434343;text-decoration: none;}
+a:hover{color: #ff4000;	text-decoration: underline;}
+body{font-size: 14px;font-family: "宋体";}
+/* div header*/
+#header{line-height: 20px;margin: 0 auto;padding: 0 0;height: 20px;clear: both;height: 20px;width: 100%;}
+#header  #pre{margin-left: 8%;float: left;}
+#header dt{	margin-left: 40px;float: left;}
+#header dt #img{display: block;}
+#header ul{	float: left;padding: 0 0 0 0;margin-left: 5%;}
+#header li #jiaju{color: #d88d8d;}
+#header li #shepin{	color: #6d4ac8;}
+/*header-liner*/
+#header-line{background-image: url("../images/toutiao.jpg");
+	background-repeat: repeat-x;margin: 0px;padding: 0px;clear: both;height: 9px;width: auto;}
+/*main search*/
+#main-body{	width:980px; height:auto; clear:both; margin:0 auto;}
+#main-body #main{width:980px; height:auto; clear:both;}
+#main #logo-pre{background-image: url("../images/logo.jpg");background-repeat: no-repeat;
+	float: left;margin-top: 5px;width: 165px;height: 78px;clear: both;}
+#main #search-center{display: block;float: left;margin-top: 10px;margin-left: 100px;}
+#main #logo-back{
+	background:url(../images/jiajuanzhuang.jpg);
+	float: right;padding: 0 0;margin-top: 10px;margin-right: 8px;width: 180px;height: 58px;	//clear: both;不能清除浮动	
+}
+#main #search-center{width: 420px;height: 78px;}
+#main #search-center #input{width: 420px;height: 50px;}
+#main #search-center #input #input-pre{
+width: 330px;height: 35px;
+float: left;
+border:1px solid #cccccc;
+line-height: 33px; //设置行高
+font-size: 18px;}
+#main #search-center #input #input-back{width: 64px;height: 36px;
+float: left;margin-left: 2px;
+font-size: 18px; line-height: 34px;text-align: center;font-weight: bold;
+color: #fff;text-decoration: none;
+background-image: url("../images/sousuo.jpg");
+}
+#main #search-center #search-bottom a{text-align: center;margin: 0 6px 0 0;}
+#main #nav{width: 980px;height:41px;clear: both;
+	background-image: url("../images/tiaohangtiao.jpg");}
+#main #nav .one{background-color: #fff;margin-left: 80px;}
+#main #nav a{float: left;text-align: center;display: block;margin: 2px 2px 2px 2px;
+font-size: 16px;color: black;line-height: 40px;
+width: 80px;height: 38px;}
+#main #nav a:hover{background-color: #fff;}
+
+/*以下是幻灯片部分*/
+#ppt{width: 980px;height: 447px;clear: both;margin-top: 10px;}
+
+/*hot-left*/
+#hot-left{float: left; width: 664px;height: 321px;border: 1px solid #bebdbe;margin-top: 100px;}
+#hot-left p{width: 664px;height: 25px;clear: both;
+float: left;background-image: url("../images/ercidaohangtiao.jpg");
+}
+#hot-left span{line-height: 32px;margin-left: 25px;}
+#hot-left li a:hover{color: #FF9933;}
+#hot-left li {display: block;margin: 0 5px 0 5px;
+font-size: 12px;margin-top: 10px;line-height: 36px;
+border-bottom-width: 1px;border-bottom-style: dashed;border-bottom-color:#CCCCCC;}
+#hot-left .f1{background-color:#F0F0F0; }
+/*hot-right*/
+#hot-right{float: right;width: 295px;height: 326px;margin-top: 98px;
+background: url("../images/youbiankuang.jpg");}
+#hot-right ul{margin-top: 64px;}
+#hot-right li{line-height: 30px;margin-left: 38px;}
+#hot-right li a:hover{color: #FF9933;text-decoration: none;}
+
+/*pay*/
+#pay{clear: both; width: 980px;height: 93px;
+	background: url("../images/xiaotu.jpg");}
+/*link*/
+#otherLink{clear: both;width: 980px;height: 72px;
+background: url("../images/bN_bg.png");
+background-repeat: 0px 0px repeat-x;margin-top: 5px;
+border-bottom: 1px solid #bebdbe;}
+#otherLink #_link{background: url("../images/youqinglianjie.png");
+width: 35px;height: 74px;float: left;}
+#otherLink #link_right{
+	float: right;
+	width: 945px;height: 74px;	
+}
+#otherLink #link_right a:hover{color:black;}
+#otherLink #link_right li{
+	line-height: 20px;margin: 0 5px 0 5px;
+}
+#bottom{clear: both;width: 980px;height:60px;text-align: center;
+margin-top: 10px; }
+#bottom p{color:#434343;}

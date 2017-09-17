@@ -1,0 +1,28 @@
+/*全局*/
+*{margin: 0;padding: 0;}
+
+/*布局*/
+#box{width: 830px;margin: 60px auto;position: relative;background: #FFEDB2;}
+#box #top,#box #bottom{width: 830px;height: 10px;background: url("img/1.png");background-repeat: no-repeat;}
+#box #title{width: 274px;height: 57px;margin: 0 auto;margin-top: -35px; z-index: 1;background: url("img/3.png");background-repeat: no-repeat;}
+#box #robot{width: 78px;height: 110px;float: right; margin-right: -32px;margin-top: -82px; z-index: 1;background: url("img/2.png");background-repeat: no-repeat;}
+#box #con{width: 830px; height: 640px;overflow: hidden;}
+
+/*内容*/
+#box #sides{width: 1680px;height: 540px; -webkit-animation: play 6s ease infinite normal;position: relative;}
+#box ul{width: 1680px;height: 540px;}
+#box ul li{width: 255px;height: 163px;list-style: none; background: url("img/loveboxbg.png");background-repeat: no-repeat;float: left;margin: 10px 20px 10px 0;display: inline-block;}
+#box ul li #send{margin-top: 20px;margin-left: 30px;}
+#box ul li #text{margin-top: 20px;margin-left: 20px;}
+#box ul li #from{margin-top: 40px;margin-left: 160px;}
+#box ul li p{color: red;}
+
+/*动画*/
+@-webkit-keyframes play{
+	0%{left: 20px;opacity: 0.3;}
+	40%{left: 20px;opacity: 1;}
+	47%{left: -810px; opacity:0.3}
+	80%{left: -810px; opacity: 1}
+	87%{left: -1640px;opacity: 0.3}
+	100%{left: -1640px;opacity: 0}
+}
