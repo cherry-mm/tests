@@ -1,0 +1,74 @@
+*{margin: 0;padding: 0;}
+body{background: #252A2F;}
+/*header*/
+.header{width: 100%;height: 76px;position: relative;}
+.header_con{width: 950px;height: 76px;margin:0 auto;position: relative;}
+.header img{width: 44px;height: 46px;float: left;position: absolute;margin-top: 15px;}
+.header-right{float: right;width: 423px;height: 76px;}
+.header-right ul li{float: left;list-style: none;width: 68px;height: 60px;margin: 0 2px;}
+.header-right ul li a{text-decoration: none;font-size: 20px;width: 68px;height: 60px;color: #fff;display: block;text-align: center;line-height: 60px;z-index: 9;}
+.header-right ul .about{background-color: #9B59B6;}
+.header-right ul li a:hover{background-color: #9B59B6;transition:1s all;}
+
+#log_reg{position: absolute;z-index: 99;width: 140px;height: 60px;right: 60px;top: 4px;}
+#log_reg li{float: left;width: 69px;height: 60px;}
+.cli_login,.cli_signup{width: 69px;height: 60px;display: block;color: #fff;font-size: 20px;text-align: center;line-height: 50px;}
+#log_reg li a:hover{background-color: #9B59B6;transition:1s all;}
+
+/*login*/
+.login{position: absolute; right: 130px;top: 100px; width: 300px;height: 270px;border:1px solid #eee;border-radius: 5px;z-index: 10;background: #fff;display: none;}
+.login:before{content: '';position: absolute;border-right: 20px solid transparent;border-left: 20px solid transparent;border-bottom: 25px solid #9B59B6;top: -26px;right: 20px;}
+fieldset:first-child{margin-top: 20px;}
+fieldset {border: 0;margin-left: 20px;margin-top: 15px;}
+fieldset label{font-size: 14px;color: #6c6c6c;}
+fieldset input{width: 260px;height: 34px;border-radius: 5px;border:1px solid #ccc;}
+fieldset input:hover{border:1px solid rgba(0,0,0,0.5);}
+.checkbox{margin-left: 20px;margin-top: 20px;width: 110px;height: 24px;display: block;}
+.btn_login{width: 260px;height: 36px;margin-left: 20px;margin-top: 10px;border: 0;background-color: #9B59B6;color: #fff;cursor: pointer;}
+.btn_login:hover{background-color: #000;}
+.login_forgot{width: 147px;height: 14px;display: block;margin-top: 20px;margin-left: 20px;font-size: 14px;text-decoration: none;color: #ccc;}
+.login_forgot:hover{color: #000;}
+
+/*reg*/
+.reg{position: absolute; right: 50px;top: 100px; width: 300px;height: 300px;border:1px solid #eee;border-radius: 5px;z-index: 20;background: #fff;display: none;}
+.reg:before{content: '';position: absolute;border-right: 20px solid transparent;border-left: 20px solid transparent;border-bottom: 25px solid #9B59B6;top: -26px;right: 20px;}
+.btn_reg{width: 260px;height: 36px;margin-left: 20px;margin-top: 20px;border: 0;background-color: #9B59B6;color: #fff;cursor: pointer;}
+.btn_reg:hover{background-color: #000;}
+
+/*about*/
+.about{width: 944px;height: 157px;margin: 0 auto;margin-top: -50px;}
+.about h1{font-size: 50px;margin: 0 auto;color: #fff;font-weight: bold;text-align: center;margin-top: 50px;line-height: 150px;}
+
+/*content*/
+.content{width: 100%;height: 1154px;background-color: #fff;}
+.content .welcom{width: 100%;height: 94px;text-align: center;font-size: 40px;background-color: #9B59B6;color: #fff;line-height: 100px;}
+.content .con_con{width: 944px;height: 1060px;margin: 0 auto;}
+.content .con_left{float: left;width: 523px;height: 437px;margin-top: 50px;}
+.content .con_left .left_top{width: 523px;height: 38px;font-size: 32px;color: #000;line-height: 40px;text-align: left;}
+.content .con_left img{margin-top: 30px;}
+
+.content .con_right{width: 377px;height: 411px;float: right;margin-top: 50px;}
+.content .con_right .title{width: 377px;height: 38px;font-size: 32px;color: #000;line-height: 40px;text-align: left;}
+.content .con_right .para{width: 377px;height: 48px;font-size: 14px;margin-top: 36px;line-height: 30px;}
+.content .con_right .scroll{width: 377px;height: 320px;}
+
+.content .con_bot{clear: both; width: 944px;height: 400px;position: relative;}
+.content .con_bot .team{width: 944px;height: 38px;font-size: 36px;line-height: 130px;text-align: center;}
+.content .con_bot .bot_img{width: 944px;height: 490px;margin: 0 auto;}
+.content .con_bot .bot_img ul li{float: left;list-style: none;margin-top: 70px;margin-right: 50px;margin-left: 30px;width: 221px;height: 490px;}
+.content .con_bot .bot_img ul li:first-child{margin-left: 50px;}
+.content .con_bot .bot_img ul li img{width: 221px;height: 220px;border-radius: 100%;border: 1px solid #fff;position: relative;}
+.content .con_bot .bot_img ul li img:hover{border: 2px solid #9B59B6;box-shadow: 0 0 20px #9B59B6;}
+
+.bot_img li h2{color: #9B59B6;margin-top: 20px;text-align: center;}
+.bot_img li .p1{margin-top: ;25px;text-align: center;font-weight: bold;}
+.bot_img li .p{margin-top: 15px; text-align: center;}
+
+/*footer*/
+.footer{width: 100%;height: 87px;position: relative;}
+.footer .foo_con{width: 944px;height: 87px;margin: 0 auto;}
+.footer .foo_con .foo_left{width: 496px;height: 78px;float: left;}
+.footer .foo_con .foo_left p{color: #9B59B6;margin-top: 30px;}
+.footer .foo_con .foo_right{width: 168px;height: 87px;float: right;}
+.footer .foo_con .foo_right li{float: left;list-style: none;width: 17px;height: 20px;margin-right: 17px;overflow: hidden;margin-top: 35px;margin-left: 5px;}
+.footer .foo_con .foo_right li a:hover img{margin-top: -30px;}

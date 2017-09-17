@@ -1,0 +1,22 @@
+$(function(){
+	$(".cli_login").bind("click",function(){
+		$(".login").fadeIn(500);
+		$(".reg").fadeOut(500);
+	}); 
+	$(".cli_signup").click(function(){
+		$(".reg").fadeIn(500);
+		$(".login").fadeOut(500);
+	});
+	$(".content").click(function(){
+		$(".login").fadeOut(500);
+		$(".reg").fadeOut(500);
+	});
+	$(".header").click(function(){
+		$(".login").fadeOut(500);
+		$(".reg").fadeOut(500);
+	});
+	$(".about").click(function(){
+		$(".login").fadeOut(500);
+		$(".reg").fadeOut(500);
+	});
+})
